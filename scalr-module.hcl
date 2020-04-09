@@ -31,13 +31,6 @@ variable "instance_type" {
   }
 }
 
-variable "sg" {
-  policy = "cloud.security_groups"
-  conditions = {
-    cloud = "ec2"
-  }
-}
-
 variable "ami" {
   global_variable = "ami"
 }
